@@ -12,14 +12,14 @@ public class ArrayInsert_Pg360 {
 		b[0] = 3;
 		b[1] = 5;
 		
-		System.out.println("Before Unification values of array a");
+		System.out.println("Before Unification values of array A & B");
 		for(int x: a) {
 			System.out.println(x);
 		}
 		
 		if(unifyArrays(a,b)) {
 				
-			System.out.println("After Unification values of array a");
+			System.out.println("After Unification values of array A & B");
 			
 			for(int x: a) {
 				System.out.println(x);
