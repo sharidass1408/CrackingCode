@@ -13,6 +13,21 @@ public class AnagramComparator  implements Comparator<String>{
 	private String stringSort(String str) {
 		char[] charArray = str.toCharArray();
 		Arrays.sort(charArray);
-		return charArray.toString();
+		//return charArray.toString();
+		return new String(charArray);
 	}
 }
+
+/*
+ * String str = "wwwwww3333dfevvv";
+char[] c = str.toCharArray();
+Now to convert character array into String , there are two ways.
+
+Arrays.toString(c);
+Returns the string [w, w, w, w, w, w, 3, 3, 3, 3, d, f, e, v, v, v].
+
+And:
+
+String.valueOf(c)
+Returns the string wwwwww3333dfevvv
+ */
