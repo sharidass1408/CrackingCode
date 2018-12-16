@@ -1,7 +1,6 @@
 package com.chapter11.anagram_pg361;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class GroupingAnagramsInStringsArrays_361  {
 
