@@ -19,7 +19,32 @@ public class LongestSubStringInString {
 		
 		System.out.println("Longest substring in: " + str1 + " is " + getLongestSubString(str1));
 		System.out.println("Longest substring in: " + str2 + " is " + getLongestSubString(str2));
-		System.out.println("Longest substring in: " + str3 + " is " + getLongestSubString(str3));
+		System.out.println("Longest substring in: " + str3 + " is " + getLongestSubString(str3)); // fails for third case as expected is abcdefgh
+		
+		//After searching for entier Array
+		System.out.println("Longest substring in after searching at every index: " + str3 + " is " + searchAtEveryIndexForSubString(str3));
+		
+		
+	}
+
+	private static String searchAtEveryIndexForSubString(String str3) {
+		int maxSizeOfSubString = 1;
+		String largestSubString = null;
+		int beginIndex =0;
+		int endIndex = str3.length()-1;
+		
+		for(int i=0; i< str3.length(); i++) {
+			
+			beginIndex = i;
+			String subString = getLongestSubString(str3.substring(beginIndex, endIndex));
+			
+			if(subString.length() > maxSizeOfSubString) {
+				maxSizeOfSubString = subString.length();
+				largestSubString = subString;
+			}
+			
+		}
+		return largestSubString;
 	}
 
 	// Solution if 1. additional data structures are allowed and 
