@@ -15,7 +15,7 @@ public class LongestSubStringInString {
 		
 		String str1 = "abcabcbb";
 		String str2 = "bbb";
-		String str3 = "bcdefghi";
+		String str3 = "babcdefgh";
 		
 		System.out.println("Longest substring in: " + str1 + " is " + getLongestSubString(str1));
 		System.out.println("Longest substring in: " + str2 + " is " + getLongestSubString(str2));

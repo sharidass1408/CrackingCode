@@ -5,6 +5,7 @@ import java.util.Comparator;
 
 public class AnagramComparator  implements Comparator<String>{
 
+	
 	@Override
 	public int compare(String str1, String str2) {
 		return stringSort(str1).compareTo(stringSort(str2));
@@ -16,6 +17,7 @@ public class AnagramComparator  implements Comparator<String>{
 		//return charArray.toString();
 		return new String(charArray);
 	}
+
 }
 
 /*
