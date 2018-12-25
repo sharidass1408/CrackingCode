@@ -15,7 +15,7 @@ public static void main(String[] args){
 		int largest = array[0];
 		int seclargest = array[0];
 		
-		for(int i = 1; i <= array.length -1; i++){
+		for(int i = 1; i < array.length; i++){
 			
 			if(largest < array[i]){
 				
