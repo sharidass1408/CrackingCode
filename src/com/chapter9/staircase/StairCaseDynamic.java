@@ -6,13 +6,15 @@ public class StairCaseDynamic {
 		
 		long startTime = System.currentTimeMillis();
 		
-		int[] map = new int[Integer.MAX_VALUE - 10000];
-		 countWays(25, map);
+		int[] map = new int[Integer.MAX_VALUE];
+		 int count = countWays(35, map);
 		long endTime = System.currentTimeMillis();
 		
 		double timeElapsed = (endTime - startTime);
 		
 		System.out.println("Time lapsed :" + timeElapsed );
+		
+		System.out.println("Count value : " + count);
 
 	}
 

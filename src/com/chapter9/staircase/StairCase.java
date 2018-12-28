@@ -4,10 +4,11 @@ public class StairCase {
 
 	public static void main(String[] args){
 		long startTime = System.currentTimeMillis();
-		 countWays(25);
+		 int count = countWays(25);
 		long endTime = System.currentTimeMillis();
 		double timeElapsed = (endTime - startTime);
 		System.out.println("Time lapsed :" + timeElapsed );
+		System.out.println("Count : " + count);
 
 	}
 
