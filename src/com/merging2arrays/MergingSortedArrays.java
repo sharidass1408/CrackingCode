@@ -4,8 +4,8 @@ public class MergingSortedArrays {
 
 	public static void main(String[] args) {
 		
-		int[] a = {2,4,5,6,9};
-		int[] b = {3,4,8,10};
+		int[] a = {2,4,5,6};
+		int[] b = {3,4,8,10,14};
 
 		int[] mergedArray = mergeArray(a, b);
 		
@@ -34,16 +34,15 @@ private static int[] mergeArray(int[] a, int[] b){
 			
 				mergedArray[index] = b[bCount];
 				bCount--;
-				index--;
 			}
 			  
 			else{
 			
 				mergedArray[index] = a[aCount];
 				aCount--;
-				index--;
 			}
 					
+			index--;
 		
 		}
 		
