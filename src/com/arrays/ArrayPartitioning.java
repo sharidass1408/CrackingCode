@@ -17,8 +17,8 @@ import java.util.Scanner;
 public class ArrayPartitioning {
 
 	public static void main(String[] args) {
-		int[] array = {6,7,3,5,2,1,8,9};
-		
+		//int[] array = {6,7,3,5,2,1,8,9};
+		int[] array = {8,2,7,3,4,1};
 		System.out.println("Before partitioning: ");		
 		printArray(array);
 		
@@ -53,9 +53,12 @@ public class ArrayPartitioning {
 		for( ; j < array.length; j++) {
 			
 			if(array[j] < pivot) {
-				swap(i,j,array);
-				i++;
-			}
+				
+				if(i != j) // if i and j are equal then swap has no meaning
+					swap(i,j,array);
+				
+				i++; // we need to increment i even if it is same as j
+			} 
 			
 		}
 		
