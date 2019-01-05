@@ -1,4 +1,4 @@
-package com.string;
+package com.strings;
 
 public class StringCompression {
 
