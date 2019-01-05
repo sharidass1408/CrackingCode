@@ -9,6 +9,7 @@ public class FibonacciNumber {
 		System.out.println("Please enter a valid number: ");
 		Scanner sc = new Scanner(System.in);
 		int value = sc.nextInt();
+		sc.close();
 		
 		System.out.println("Fibonacci value for the number is: " + fibonacci(value));
 		

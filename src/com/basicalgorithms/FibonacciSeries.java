@@ -10,6 +10,7 @@ public class FibonacciSeries {
 		System.out.println("Please enter a number to perform fibonnoci");
 		Scanner reader = new Scanner(System.in);
 		int value = reader.nextInt();
+		reader.close();
 		
 		System.out.println("Fibonacci series for the entered number is: ");
 		fibonacci(value);

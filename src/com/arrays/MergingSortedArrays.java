@@ -1,4 +1,4 @@
-package com.merging2arrays;
+package com.arrays;
 
 public class MergingSortedArrays {
 

@@ -25,6 +25,7 @@ public class ArrayPartitioning {
 		System.out.println("Please enter pivot: ");	
 		Scanner sc = new Scanner(System.in);
 		int pivot = sc.nextInt();
+		sc.close();
 		
 		partition(array, pivot);
 		
