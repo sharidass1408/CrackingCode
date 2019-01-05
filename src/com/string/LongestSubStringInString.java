@@ -1,4 +1,4 @@
-package com.amazon;
+package com.string;
 
 /**
  * 
@@ -22,11 +22,12 @@ public class LongestSubStringInString {
 		System.out.println("Longest substring in: " + str3 + " is " + getLongestSubString(str3)); // fails for third case as expected is abcdefgh
 		
 		//After searching for entier Array
-		System.out.println("Longest substring in after searching at every index: " + str3 + " is " + searchAtEveryIndexForSubString(str3));
+		System.out.println("Longest substring in after searching at every index of " + str3 + " is " + searchAtEveryIndexForSubString(str3));
 		
 		
 	}
 
+	//Preferred Solution
 	private static String searchAtEveryIndexForSubString(String str3) {
 		int maxSizeOfSubString = 1;
 		String largestSubString = null;
