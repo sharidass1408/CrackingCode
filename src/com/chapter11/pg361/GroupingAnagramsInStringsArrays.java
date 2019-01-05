@@ -1,8 +1,8 @@
-package com.chapter11.anagram_pg361;
+package com.chapter11.pg361;
 
 import java.util.Arrays;
 
-public class GroupingAnagramsInStringsArrays_361  {
+public class GroupingAnagramsInStringsArrays  {
 
 	public static void main(String[] args) {
 		String[] stringArray = new String[5];

@@ -1,9 +1,9 @@
-package com.chapter11.anagram_pg361;
+package com.chapter11.pg361;
 
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class AnagramComparator  implements Comparator<String>{
+public class AnagramComparator implements Comparator<String>{
 
 	
 	@Override

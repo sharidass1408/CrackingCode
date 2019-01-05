@@ -1,6 +1,6 @@
-package com.chapter11;
+package com.chapter11.pg360;
 
-public class ArrayInsert_Pg360 {
+public class ArrayInsert{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,4 +1,4 @@
-package com.chapter11.anagram_pg362;
+package com.chapter11.pg362;
 
 import java.util.Arrays;
 import java.util.HashMap;
