@@ -1,6 +1,7 @@
 package com.chapter3.pg214;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
 
@@ -17,6 +18,15 @@ class QueueWith2StacksTest {
 		Assert.assertEquals(1,queue.size());
 	}
 	
+	@Before
+	void add4ElementstoQueue() {
+		QueueWith2Stacks<String> queue = new QueueWith2Stacks<>();
+		queue.add("a");
+		queue.add("b");
+		queue.add("c");
+		queue.add("d");
+	}
+	
 	@Test
 	void pop_QueueWith4Element_PopFirstElement() {
 		
@@ -30,5 +40,4 @@ class QueueWith2StacksTest {
 	}
 	
 	
-
 }
