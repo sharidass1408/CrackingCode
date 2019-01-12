@@ -21,28 +21,25 @@ public class QueueWith2Stacks<T> {
 	//Check if elements are avialble in old Stack
 	// shuffle if need and pop from oldStack
 	public T remove() {
-		
-		if(oldElementsStack.peek() == null) {
 			shuffleStacks();
-		}
 		return oldElementsStack.pop();
 	}
 	
 	
 	public T peek(T object) {
 		
-		if(oldElementsStack.peek() == null) {
 			shuffleStacks();
-		}
+		
 		return oldElementsStack.peek();
 	}
 	
 	
 	// Main logic is to do a shuffle only when oldElementsStack is Empty
+	//Important take aways Peek
 	public void shuffleStacks() {
 		
 		if(oldElementsStack.isEmpty()) {
-			while (newElementsStack.peek() != null) {
+			while (!newElementsStack.isEmpty()) {
 				oldElementsStack.push((newElementsStack.pop()));
 			}
 		}
