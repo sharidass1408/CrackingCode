@@ -25,11 +25,10 @@ public class SortingStackWithJustOneMoreStackTest {
 		expectedStack.push(3);
 		expectedStack.push(4);
 		
-		SortingStackWithJustOneMoreStack sortStack = new SortingStackWithJustOneMoreStack();
-		Stack<Integer> sortedStack = sortStack.sortStack(originalStack);
+		Stack<Integer> sortedStack = SortingStackWithJustOneMoreStack.sortStack(originalStack);
 		
-		Assert.assertThat(expectedStack, 
-			       IsIterableContainingInOrder.contains(originalStack.toArray()));
+		Assert.assertArrayEquals(expectedStack.toArray(), sortedStack.toArray());
 		
 	}
+	
 }

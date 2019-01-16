@@ -5,7 +5,7 @@ import java.util.Stack;
 public class SortingStackWithJustOneMoreStack<T> {
 	
 
-	public Stack<Integer> sortStack(Stack<Integer> originalStack){
+	public static Stack<Integer> sortStack(Stack<Integer> originalStack){
 		
 		Stack<Integer> sortedStack = new Stack<>();
 		
