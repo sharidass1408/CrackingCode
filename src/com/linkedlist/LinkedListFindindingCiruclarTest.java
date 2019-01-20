@@ -20,7 +20,7 @@ class LinkedListFindindingCiruclarTest {
 		linkedList.addNode(node3);
 		linkedList.addNode(node4); //Circular list
 		
-		Assert.assertFalse(LinkedListFindindingCiruclar.isLoopPresent(linkedList));
+		Assert.assertFalse(linkedList.isLoopPresent());
 	}
 	
 	@Test
@@ -37,7 +37,7 @@ class LinkedListFindindingCiruclarTest {
 		linkedList.addNode(node3);
 		linkedList.addNode(node4); //Circular list
 		
-		Assert.assertTrue(LinkedListFindindingCiruclar.isLoopPresent(linkedList));
+		Assert.assertTrue(linkedList.isLoopPresent());
 	}
 	
 	

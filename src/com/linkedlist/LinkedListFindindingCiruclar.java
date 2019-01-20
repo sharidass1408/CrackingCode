@@ -18,16 +18,16 @@ public class LinkedListFindindingCiruclar {
 		
 	}
 	
-	public static boolean isLoopPresent(LinkedListFindindingCiruclar linkedList){
+	public boolean isLoopPresent(){
 		
-		if(linkedList.root == null || 
-				(linkedList.root != null && linkedList.root.next == null)) {
+		if(this.root == null || 
+				(this.root != null && this.root.next == null)) {
 			return false; // for 0 or one element
 		}
 		
 		//Both start at one step apart from each other
-		Node nextNode = linkedList.root;
-		Node nextNextNode = linkedList.root.next;
+		Node nextNode = this.root;
+		Node nextNextNode = this.root.next;
 		
 		do {
 			if(nextNode.equals(nextNextNode)) {
