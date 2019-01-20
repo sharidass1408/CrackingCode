@@ -25,20 +25,20 @@ public class LinkedListFindindingCiruclar {
 			return false; // for 0 or one element
 		}
 		
-		//Both start at the same location
-		Node nextNode = linkedList.root.next;
-		Node nextNextNode = nextNode;
+		//Both start at one step apart from each other
+		Node nextNode = linkedList.root;
+		Node nextNextNode = linkedList.root.next;
 		
 		do {
 			if(nextNode.equals(nextNextNode)) {
-				return false;
+				return true; 
 			}
 			nextNode = nextNode.next; //  jump one
 			nextNextNode = nextNextNode.next.next; // jump two
 			
-		}while(nextNode != null);
+		}while(nextNextNode.next != null && nextNextNode.next.next != null);
 		
-		return true;
+		return false;
 	}
 	
 
