@@ -5,6 +5,24 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 class LinkedListFindindingCiruclarTest {
+	
+	@Test
+	public void isLoopPresent_withNoNodesAdded_returnsNull() {
+		
+		LinkedListFindindingCiruclar linkedList = new LinkedListFindindingCiruclar();
+		
+		Assert.assertFalse(linkedList.isLoopPresent());
+	}
+	
+	@Test
+	public void isLoopPresent_withOneNodeAdded_returnsNull() {
+		
+		LinkedListFindindingCiruclar linkedList = new LinkedListFindindingCiruclar();
+		Node node1 = new Node(null,1);
+		linkedList.addNode(node1);
+		
+		Assert.assertFalse(linkedList.isLoopPresent());
+	}
 
 	@Test
 	public void isLoopPresent_withOutLoop_returnsFlase() {
