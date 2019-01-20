@@ -1,4 +1,4 @@
-package com.linkedlist;
+package com.chapter2.pg194;
 
 public class LinkedListFindindingCiruclar {
 	
