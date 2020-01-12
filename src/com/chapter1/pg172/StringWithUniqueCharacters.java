@@ -15,23 +15,9 @@ public class StringWithUniqueCharacters {
 	}
 
 	private static boolean uniqueCharacters(String str) {
-		
-		int[] charArray = new int[256];
-		
-		for(int i = 0; i < str.length(); i++) {
-			
-			char ch = str.charAt(i);
-			
-			if( charArray[ch] == 1) {
-				return false;
-			}
-			else {
-				charArray[ch] = 1;
-			}
-			
-		}
-		
-		return true;
+		return false;
 	}
 
+	
+	
 }
